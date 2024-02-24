@@ -1,5 +1,5 @@
 resource "aws_security_group" "sgrp" {
-  name        = var.name.id
+  name        = var.name
   description = var.description
   vpc_id      = var.vpc_id
 
@@ -9,7 +9,7 @@ resource "aws_security_group" "sgrp" {
 }
 
 resource "aws_security_group_rule" "sgrp_rules" {
-  for_each                 = var.sgrp_rules
+  for_each                 = var.sgrp_rules 
   description              = each.key
   type                     = each.value[0]
   from_port                = each.value[1]
@@ -17,6 +17,6 @@ resource "aws_security_group_rule" "sgrp_rules" {
   protocol                 = each.value[3]
   cidr_blocks              = length(each.value[4]) <= 18 ? [each.value[4]] : null
   source_security_group_id = startswith(each.value[4], "sg-") ? each.value[4] : null
-  security_group_id        = aws_security_group.sg.id
+  security_group_id        = aws_security_group.sgrp.id
 }
 

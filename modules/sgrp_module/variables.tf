@@ -1,3 +1,6 @@
+variable "name" {
+    
+}
 variable "vpc_id" {
 
 }
@@ -8,5 +11,5 @@ variable "sgrp_tag" {
 
 }
 variable "sgrp_rules" {
-    
+
 }
