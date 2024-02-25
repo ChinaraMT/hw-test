@@ -1,17 +1,15 @@
-variable "vpc_id" {
-  
-}
 
 variable "ami" {
   
 }
 variable "key_name" {
-    
-}
-
-variable "instance_type" {
 
 }
+
+variable "instance_type"  {
+
+}
+
 
 variable "subnet_id" {
 
