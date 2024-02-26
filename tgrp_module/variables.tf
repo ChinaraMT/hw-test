@@ -2,7 +2,7 @@ variable "key_name" {
 
 }
 
-variable "to_port" {
+variable "port" {
   
 }
 variable "protocol" {
