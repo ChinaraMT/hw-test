@@ -1,4 +1,5 @@
 output "id" {
-    value = module.alb_target_group_attachment.instance_ids
+    value = aws_lb_target_group_attachment.tgrp_to_lb.id
 }
+
 
