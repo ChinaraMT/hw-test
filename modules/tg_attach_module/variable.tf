@@ -6,6 +6,6 @@ variable "target_id" {
 
 }
 
-variable "instances" {
+variable "instance" {
 
 }
