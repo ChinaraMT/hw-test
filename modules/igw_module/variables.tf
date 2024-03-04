@@ -2,6 +2,10 @@ variable "vpc_id" {
   
 }
 
-variable "igw_tag" {
+variable "vpc_tag" {
+  
+}
+
+variable "create_attach_igw" {
   
 }
