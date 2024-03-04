@@ -1,15 +1,23 @@
-variable "name" {
-
-}
-
-variable "port" {
+variable "tg_name" {
   
 }
-variable "protocol" {
 
+variable "tg_port" {
+  
 }
 
-variable "vpc_id" {
-
+variable "tg_protocol" {
+  
 }
 
+variable "tg_tag" {
+  
+}
+
+variable "tg_vpc_id" {
+  
+}
+
+variable "instance_ids" {
+  type = list(string)
+}
